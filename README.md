@@ -15,7 +15,7 @@ CREATE TABLE `plugin_telegram_lottery_logs` (
   KEY `idx_tg_date` (`telegram_id`, `created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-https://tuchuang.hanbao.cloud/file/AgACAgUAAyEGAATOlTvtAAMJaTHC9oTQIf7T79QHdqwbj2s9x5EAAkELaxt9pJFVP2r5RTAKo-YBAAMCAAN5AAM2BA.png
+https://telegraph-image-88g.pages.dev/file/AgACAgUAAyEGAATOlTvtAAMKaTHGdQuHxfxbTntlD910T5KhfA0AAkILaxt9pJFVvYquI1Cgw9UBAAMCAAN5AAM2BA.png
 
 按下面做就行：
 
