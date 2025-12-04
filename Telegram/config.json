@@ -1,0 +1,103 @@
+{
+  "name": "Telegram Bot 集成",
+  "code": "telegram",
+  "version": "1.0.2",
+  "description": "Telegram Bot 消息处理和命令系统",
+  "author": "XBoard Team",
+  "require": {
+    "xboard": ">=1.0.0"
+  },
+  "config": {
+    "enable_ticket_notify": {
+      "type": "boolean",
+      "default": true,
+      "label": "开启工单通知",
+      "description": "是否开启工单创建和回复的 Telegram 通知功能"
+    },
+    "enable_payment_notify": {
+      "type": "boolean",
+      "default": true,
+      "label": "开启支付通知",
+      "description": "是否开启支付成功的 Telegram 通知功能"
+    },
+    "start_welcome_title": {
+      "type": "string",
+      "default": "🎉 欢迎使用 XBoard Telegram Bot！",
+      "label": "欢迎标题",
+      "description": "/start 命令显示的欢迎标题"
+    },
+    "start_bot_description": {
+      "type": "text",
+      "default": "🤖 我是您的专属助手，可以帮助您：\\n• 绑定您的 XBoard 账号\\n• 查看流量使用情况\\n• 获取最新订阅链接\\n• 管理账号绑定状态\\n• 抽奖领取流量",
+      "label": "机器人描述",
+      "description": "/start 命令显示的机器人功能介绍"
+    },
+    "start_bind_guide": {
+      "type": "text",
+      "default": "🔗 请先绑定您的 XBoard 账号：\\n1. 登录您的 XBoard 账户\\n2. 复制您的订阅链接\\n3. 发送 /bind + 订阅链接",
+      "label": "绑定指导",
+      "description": "未绑定用户显示的绑定指导文本"
+    },
+    "start_unbind_guide": {
+      "type": "text",
+      "default": "📋 可用命令：\\n/traffic - 查看流量使用情况\\n/getlatesturl - 获取订阅链接\\n/lottery - 抽奖状态\\n/draw - 抽奖领取流量\\n/unbind - 解绑账号",
+      "label": "已绑定用户命令列表",
+      "description": "已绑定用户显示的命令列表"
+    },
+    "start_bind_commands": {
+      "type": "text",
+      "default": "📋 可用命令：\\n/bind [订阅链接] - 绑定账号",
+      "label": "未绑定用户命令列表",
+      "description": "未绑定用户显示的命令列表"
+    },
+    "start_footer": {
+      "type": "text",
+      "default": "💡 提示：所有命令都需要在私聊中使用",
+      "label": "底部提示",
+      "description": "/start 命令底部的提示信息"
+    },
+    "help_text": {
+      "type": "text",
+      "default": "请使用以下命令：\\n/bind - 绑定账号\\n/traffic - 查看流量\\n/getlatesturl - 获取最新链接\\n/lottery - 抽奖状态\\n/draw - 抽奖领取流量",
+      "label": "帮助文本",
+      "description": "未知命令时显示的帮助文本"
+    },
+
+    "enable_lottery": {
+      "type": "boolean",
+      "default": true,
+      "label": "启用抽奖",
+      "description": "是否启用 Telegram 抽奖领流量"
+    },
+    "lottery_min_mb": {
+      "type": "number",
+      "default": 1,
+      "label": "抽奖最小奖励(MB)",
+      "description": "抽奖最小奖励，单位 MB"
+    },
+    "lottery_max_mb": {
+      "type": "number",
+      "default": 1024,
+      "label": "抽奖最大奖励(MB)",
+      "description": "抽奖最大奖励，单位 MB（1024MB=1GB）"
+    },
+    "lottery_daily_limit_per_user": {
+      "type": "number",
+      "default": 1,
+      "label": "每用户每日抽奖次数",
+      "description": "同一个站点账号每天最多抽奖次数"
+    },
+    "lottery_daily_limit_per_telegram": {
+      "type": "number",
+      "default": 1,
+      "label": "每 Telegram 每日抽奖次数",
+      "description": "同一个 Telegram 账号每天最多抽奖次数（防刷）"
+    },
+    "lottery_require_bind": {
+      "type": "boolean",
+      "default": true,
+      "label": "必须绑定才可抽奖",
+      "description": "未绑定账号是否允许抽奖（推荐必须绑定）"
+    }
+  }
+}
